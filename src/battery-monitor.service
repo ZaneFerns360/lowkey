@@ -1,0 +1,15 @@
+[Unit]
+Description=Battery Monitoring Service
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/lowkey 
+Restart=always
+RestartSec=5
+StartLimitInterval=10s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
+

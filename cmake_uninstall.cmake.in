@@ -1,0 +1,10 @@
+
+if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+    message(FATAL_ERROR "CMAKE_INSTALL_PREFIX is not defined")
+endif()
+
+file(REMOVE_RECURSE
+    "${CMAKE_INSTALL_PREFIX}/usr/local/bin/lowkey"
+    "/etc/systemd/user/battery-monitor.service"
+)
+
