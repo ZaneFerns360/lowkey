@@ -37,6 +37,10 @@ void sendNotification() {
   system("notify-send -u critical 'Low Battery' 'Charge soon'");
 }
 
+void sendBatteryFull() {
+  system("notify-send -u normal 'Battery Full' 'Battery at 100%'");
+}
+
 bool readLockState(const std::string &lockFilePath) {
   std::ifstream lockFile(lockFilePath);
   bool lockState = false;
@@ -95,8 +99,12 @@ int main() {
     sendNotification();
     lockState = true;
     writeLockState(lockFilePath, lockState);
-  } else if (capacity >= criticalLevel && lockState) {
+  } else if (capacity >= criticalLevel && lockState && capacity < 100) {
     lockState = false;
+    writeLockState(lockFilePath, lockState);
+  } else if (capacity == 100 && !lockState) {
+    sendBatteryFull();
+    lockState = true;
     writeLockState(lockFilePath, lockState);
   }
 
