@@ -4,7 +4,7 @@ if(NOT DEFINED CMAKE_INSTALL_PREFIX)
 endif()
 
 file(REMOVE_RECURSE
-    "${CMAKE_INSTALL_PREFIX}/usr/local/bin/lowkey"
+    "${CMAKE_INSTALL_PREFIX}/usr/bin/lowkey"
     "/etc/systemd/user/battery-monitor.service"
 )
 
