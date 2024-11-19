@@ -1,1 +1,15 @@
 build/
+# Ignore package files
+*.pkg.tar.zst
+hooks/
+# Ignore build artifacts
+lowkey
+lowkey-debug*
+lowkey*/
+
+# Ignore build directories
+pkg
+src
+
+# Ignore CMake generated files
+CMakeFiles/
