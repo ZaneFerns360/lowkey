@@ -21,6 +21,12 @@ Before you begin, ensure you have met the following requirements:
 
 ## Installation
 
+## AUR-
+
+   ```
+   yay -S lowkey
+   ```
+
 To install lowkey, follow these steps:
 
 1. Clone the repository:

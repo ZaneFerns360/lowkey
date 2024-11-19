@@ -17,7 +17,7 @@ endif()
 target_link_libraries(lowkey PUBLIC Boost::program_options)
 
 install(TARGETS lowkey
-    RUNTIME DESTINATION /usr/local/bin
+    RUNTIME DESTINATION /usr/bin
 )
 
 
