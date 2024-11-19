@@ -1,6 +1,6 @@
 # Maintainer: Zane Fernandes
 pkgname=lowkey
-pkgver=r4.0890d8c
+pkgver=r5.67be110
 pkgrel=1
 pkgdesc="A customizable notification daemon"
 arch=('x86_64')

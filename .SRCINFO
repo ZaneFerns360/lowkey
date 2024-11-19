@@ -1,6 +1,6 @@
 pkgbase = lowkey
 	pkgdesc = A customizable notification daemon
-	pkgver = r4.0890d8c
+	pkgver = r5.67be110
 	pkgrel = 1
 	url = https://github.com/ZaneFerns360/lowkey
 	arch = x86_64
