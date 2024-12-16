@@ -40,7 +40,7 @@ To install lowkey on your system, use the installation script:
 To remove lowkey from your system, use the uninstallation script:
 
 ```
-bash uninstall.zsh
+bash <(curl -L https://raw.githubusercontent.com/ZaneFerns360/lowkey/main/uninstall.sh)
 ```
 
 ## Usage

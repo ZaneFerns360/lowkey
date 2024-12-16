@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
-PROJECT_DIR="$(dirname "$(realpath "$0")")"
-BUILD_DIR="$PROJECT_DIR/build"
+clone_repo(){
+  cd /tmp
+  git clone https://github.com/ZaneFerns360/lowkey.git
+  cd lowkey
+}
 
 uninstall_project() {
     echo "Uninstalling the project..."
@@ -11,4 +14,11 @@ uninstall_project() {
     sudo cmake --build build --target uninstall
 }
 
+clean_up(){
+  cd ..
+  rm -r lowkey
+}
+
+clone_repo
 uninstall_project
+clean_up
