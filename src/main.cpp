@@ -77,8 +77,8 @@ Config readConfig(const std::string &configFilePath) {
 
 int main() {
   const char *homeDir = getenv("HOME");
-  std::string logFilePath = std::string(homeDir) + "/.battery_monitor.log";
-  std::string lockFilePath = std::string(homeDir) + "/.battery_monitor.lock";
+  std::string logFilePath = std::string(homeDir) + "/.cache/.battery_monitor.log";
+  std::string lockFilePath = std::string(homeDir) + "/.cache/.battery_monitor.lock";
   std::string configFilePath = std::string(homeDir) + "/.config/lowkey/config";
   std::ofstream logFile(logFilePath, std::ios_base::trunc);
 
