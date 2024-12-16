@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/usr/bin/env bash
 
 PROJECT_DIR="$(dirname "$(realpath "$0")")"
 BUILD_DIR="$PROJECT_DIR/build"
