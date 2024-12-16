@@ -21,32 +21,19 @@ Before you begin, ensure you have met the following requirements:
 
 ## Installation
 
-## AUR-
+### AUR-
 
    ```
    yay -S lowkey
    ```
 
-To install lowkey, follow these steps:
+### Using an installation script
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/lowkey.git
-   cd lowkey
-   ```
+To install lowkey on your system, use the installation script:
 
-2. Run the installation script:
    ```
-   bash install.zsh
+   bash <(curl -L https://raw.githubusercontent.com/ZaneFerns360/lowkey/main/install.sh)
    ```
-3. Run the daemon:
-
-```
-systemctl --user daemon-reload
-systemctl --user start battery-monitor.service
-systemctl --user enable battery-monitor.service
-
-```
 
 ## Uninstallation
 
