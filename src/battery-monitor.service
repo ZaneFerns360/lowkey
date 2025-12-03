@@ -1,15 +1,15 @@
 [Unit]
 Description=Battery Monitoring Service
-After=multi-user.target
+After=graphical-session.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/lowkey 
+ExecStart=/usr/bin/lowkey
 Restart=always
 RestartSec=5
 StartLimitInterval=10s
 StartLimitBurst=5
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=graphical-session.target
 
